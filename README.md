@@ -1,12 +1,69 @@
-# React + Vite
+# Movie Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based movie search application that allows users to discover and explore movies. The app features a modern UI, real-time search functionality, and displays trending movies.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time movie search with debouncing
+- Trending movies section
+- Responsive modern UI
+- Movie details display with posters
+- Integration with TMDB API
+- Error handling and loading states
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Vite
+- TailwindCSS
+- Appwrite
+- React-use (for debouncing)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- TMDB API key
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd movie-app2
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Create a `.env` file in the root directory and add your TMDB API key
+```env
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+4. Start the development server
+```bash
+npm run dev
+```
+
+## Usage
+
+- Use the search bar to find movies
+- View trending movies in the trending section
+- Click on movie cards to view more details
+- Enjoy a responsive and user-friendly interface
+
+## Development
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
